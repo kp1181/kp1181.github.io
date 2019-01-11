@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css?family=Annie Use Your Telescope");
+
+p{
+  font-family: 'Annie Use Your Telescope';
+}
+
+#text1{
+  padding-top: 100px;
+  padding-bottom: 20px;
+  padding-right: 30px;
+  padding-left: 80px;
+  font-size: 30px;
+}
+
+#img1
+{
+  padding-top: 80px;
+}
+
+.heading
+{
+  font-family: 'Annie Use Your Telescope';
+  font-size: 50px;
+}
+
+label
+{
+  font-size: 30px;
+  font-family: 'Annie Use Your Telescope';
+}
+
+h1
+{
+  font-family: 'Annie Use Your Telescope';
+}
+
+.heading2
+{
+  font-family: 'Annie Use Your Telescope';
+  font-size: 50px;
+  padding-top:200px;
+  padding-bottom: 20px;
+  padding-right: 30px;
+  padding-left: 880px;
+}
+
+a{
+  font-family: 'Annie Use Your Telescope';
+  font-size:30px;
+}
+
+.img{
+  padding-left: 80px;
+  width:400px;
+  height:200px;
+}
