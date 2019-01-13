@@ -1,0 +1,22 @@
+{
+  "images":[
+      {
+        "path":"images/a.jpeg"
+      },
+      {
+        "path":"images/b.jpeg"
+      },
+      {
+        "path":"images/c.jpeg"
+      },
+      {
+        "path":"images/d.jpeg"
+      },
+      {
+        "path":"images/e.jpeg"
+      },
+      {
+        "path":"images/f.jpeg"
+      },
+  ]
+}
