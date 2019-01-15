@@ -23,12 +23,6 @@ p{
   font-size: 50px;
 }
 
-label
-{
-  font-size: 30px;
-  font-family: 'Annie Use Your Telescope';
-}
-
 h1
 {
   font-family: 'Annie Use Your Telescope';
@@ -75,4 +69,19 @@ table img {
     width: 310px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+
+.container {
+    padding: 16px;
+}
+
+
+.close {
+    position: absolute;
+    right: 35px;
+    top: 10px;
+    color: #000;
+    font-size: 40px;
+    font-weight: bold;
 }

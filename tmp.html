@@ -10,13 +10,12 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
     <script  type="text/javascript" src="js/scripts.js"></script>
-    <script src="js/gallery.json" type="text/javascript" ></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
     <title>Home Page</title>
   </head>
-  <body onload="setImages()">
+  <body>
 
 
 
@@ -24,7 +23,7 @@
       <div class="collapse navbar-collapse justify-content-md-center">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link font-weight-bold active" href="#">Home</a>
+            <a class="nav-link font-weight-bold" href="#">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link font-weight-bold" href="#aboutme">About Me</a>
@@ -33,10 +32,7 @@
             <a class="nav-link font-weight-bold" href="#contactme">Contact Me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link font-weight-bold" href="#photos">Photos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link font-weight-bold" href="galleryAdmin.html">Gallery admin  </a>
+            <a class="nav-link font-weight-bold" href="#gallery">Gallery</a>
           </li>
         </ul>
     </div>
@@ -98,14 +94,46 @@
 
     <hr>
 
-    <div id='photos' class="container-fluid">
+    <div id='gallery' class="container-fluid">
       <div  class="col-md-12  pull-right heading" style="text-align:center">
         <p>My photos are here!</p>
       </div>
 
-      <table class="col-md-12" id="imageTable">
-      </table>
+      <div class="row justify-content-start">
+        <div class="col-md-4">
+          <div class="img">
+            <img src="images/a.jpeg">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="img">
+            <img src="images/b.jpeg">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="img">
+            <img src="images/c.jpeg">
+          </div>
+        </div>
+      </div>
 
+      <div class="row justify-content-start">
+        <div class="col-md-4">
+          <div class="img">
+            <img src="images/d.jpeg">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="img">
+            <img src="images/e.jpeg">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="img">
+            <img src="images/f.jpeg">
+          </div>
+        </div>
+      </div>
 
     </div>
 

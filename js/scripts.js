@@ -1,7 +1,16 @@
-$document.ready(function(){
-  $.getjson('gallery.json',function(data){
-    $.each(data.items,function(i,f){
-        $().append("<li>img src="+f.path+"/></li>");
-    });
-  });
-});
+function setImages()
+{
+  var obj = JSON.parse(data);
+  var imgData = obj.images;
+  var table = document.getElementById("imageTable");
+  var tr,td;
+  for(var i=0;i<imgData.length;i++){
+    var image = document.createElement("img");
+    image.src=imgData[i].url;
+    if(i%3==0){
+      tr = table.insertRow();
+    }
+    td = tr.insertCell();
+    td.appendChild(image);
+  }
+}
