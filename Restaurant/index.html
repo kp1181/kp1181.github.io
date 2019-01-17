@@ -22,20 +22,24 @@
       <div class="row justify-content-start">
 
         <div class="col-md-4 tables">
-          <div class="jumbotron " style="text-align: center;">
+          <div class="jumbotron" style="text-align: center;margin-bottom:5px;padding-bottom:30px;padding-top:30px;">
             <h2>Tables</h2>
           </div>
-          <input type="text" placeholder="Search Table" name="table_input" id ="input1" onkeyup="searchTables()" class="glowing-border" title = "Search by table names">
+          <div class="ip">
+            <input type="text" placeholder="Search Table" name="table_input" id ="input1" onkeyup="searchTables()" class="input-group form-control glowing-border" title = "Search by table names">
+          </div>
           <div id="Tables" >
 
           </div>
         </div>
 
         <div class="col-md-8 menu">
-          <div class="jumbotron" style="text-align: center;">
+          <div class="jumbotron" style="text-align: center;margin-bottom:5px;padding-bottom:30px;padding-top:30px;">
             <h2>Menu</h2>
           </div>
-          <input type="text" placeholder="Search menu by food" name="menu_input" id ="input2" onkeyup="searchMenu()" class="glowing-border" title = "Search menu by food">
+          <div class="ip">
+          <input type="text" placeholder="Search menu by food" name="menu_input" id ="input2" onkeyup="searchMenu()" class="input-group form-control glowing-border" title = "Search menu by food">
+        </div>
           <div id="Items" >
 
           </div>
@@ -47,19 +51,19 @@
       <div class="modal-dialog">
 
         <div class="modal-content container">
-          <div class="modal-header">
+          <div class="modal-header" style="padding-bottom:5px">
             <h4 class="modal-title" id="head"></h4>
             <button type="button" class="close" data-dismiss="modal">×</button>
 
           </div>
 
-          <div id="body">
+          <div id="body" style="padding-top:5px">
             <table style="width:100%" id="bill">
             </table>
           </div>
 
           <div class="col-md-12" style="width:100%,text-align:center">
-            <div class="btn btn-success" style="text-align:center" id="tail">Pay and close session</div>
+            <div class="btn btn-success btn-block" style="text-align:center;margin-bottom:10px;margin-top:10px" id="tail">Pay and close session</div>
           </div>
 
         </div>

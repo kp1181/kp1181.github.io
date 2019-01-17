@@ -48,19 +48,24 @@ function bill(ev){
     variety.insertCell(1).innerHTML = item.name;
     variety.insertCell(2).innerHTML = item.price;
     variety.insertCell(3).innerHTML = '<input type="number" style="align:center;width:50px"></input>';
+    variety.cells[3].className = "input-group glowing-border";
     document.getElementsByTagName("input")[i+2].id = 1000+i;
     document.getElementsByTagName("input")[i+2].value = table.items[i].quantity;
     variety.insertCell(4).innerHTML = '<i class="fa fa-trash"></i>';
     document.getElementsByClassName("fa fa-trash")[i].id = 10000+i;
     variety.cells[3].addEventListener("change",edit,false);
   	variety.cells[4].addEventListener("click",del,false);
+
   }
+
   row = bill.insertRow(table.items.length+1);
   row.insertCell(0).innerHTML = "";
   row.insertCell(1).innerHTML = "";
   row.insertCell(2).innerHTML = "Total : "+table.amount;
   row.insertCell(3).innerHTML = "";
   row.insertCell(4).innerHTML = "";
+  row.style.paddingTop="20px";
+  row.style.borderTop = "1px solid #d6d6c2"
   currentTable = table;
   var tail = document.getElementById("tail");
   tail.addEventListener("click",pay,false);
@@ -70,7 +75,6 @@ function bill(ev){
 }
 
 function pay(){
-  alert("Pay Rs."+currentTable.amount);
   $("#myModal").modal("hide");
   currentTable.amount=0;
   currentTable.totalItems=0;
