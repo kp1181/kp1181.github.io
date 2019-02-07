@@ -1,6 +1,14 @@
 function setImages()
 {
-  var obj = JSON.parse(data);
+  if(localStorage.getItem('cache')==null){
+    var tmp = JSON.parse(data);
+    localStorage.setItem('cache', JSON.stringify(tmp));
+    var obj = JSON.parse(localStorage.getItem('cache'));
+  }
+  else {
+    var obj = JSON.parse(localStorage.getItem('cache'));
+  }
+  
   var imgData = obj.images;
   var table = document.getElementById("imageTable");
   var tr,td;

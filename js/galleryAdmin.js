@@ -1,4 +1,12 @@
-var obj = JSON.parse(data);
+if(localStorage.getItem('cache')==null){
+  var tmp = JSON.parse(data);
+  localStorage.setItem('cache', JSON.stringify(tmp));
+  var obj = JSON.parse(localStorage.getItem('cache'));
+}
+else {
+  var obj = JSON.parse(localStorage.getItem('cache'));
+}
+
 var currentImage,id=0;
 
 function isUrl(url){
@@ -128,6 +136,7 @@ $(document).on("click", "#add", function(event){
     image.id = id++;
     image.addEventListener("click",openModal);
     obj['images'].push({"id":image.id,"name":name.value,"url":url.value,"info":info.value,"uploadedDate":uploadedDate.value});
+    localStorage.setItem('cache',JSON.stringify(obj));
     td.appendChild(image);
     $("#myModal").modal('hide');
   }
@@ -153,6 +162,7 @@ $(document).on("click", "#save", function(event){
   			obj.images[i].url = url.value;
   			obj.images[i].info = info.value;
   			obj.images[i].uploadedDate = uploadedDate.value;
+        localStorage.setItem('cache',JSON.stringify(obj));
         currentImage.src=url.value;
         currentImage.name=name.value;
         currentImage.info=info.value;
@@ -177,6 +187,7 @@ $(document).on("click", "#del", function(event){
     if(currentImage.id == obj.images[i].id)
     {
       obj.images.splice(i,1);
+      localStorage.setItem('cache',JSON.stringify(obj))
       break;
     }
   }
